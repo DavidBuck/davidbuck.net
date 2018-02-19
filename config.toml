@@ -1,0 +1,32 @@
+baseURL = "https://davidbuck.net/"
+title = "David Buck"
+languageCode = "en-us"
+theme = "tyger-minimal-blog"
+disableKinds = ["taxonomy", "taxonomyTerm"]
+pygmentsStyle= "manni"
+
+[[menu.main]]
+identifier = "about"
+name       = "About"
+url        = "/about/"
+weight     = 2
+
+[[menu.main]]
+identifier = "posts"
+name       = "Posts"
+url        = "/post/"
+weight     = 1
+
+[outputs]
+home = [ "RSS", "HTML"]
+
+[outputFormats]
+[outputFormats.RSS]
+mediatype = "application/rss"
+baseName = "feed"
+
+
+[params]
+  footerText = "David Buck — Front End Developer"
+  twitterUser = "david_buck"
+  githubUser = "davidbuck"
