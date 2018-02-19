@@ -68,7 +68,7 @@ Hugo uses a [default RSS template](//gohugo.io/templates/rss/#the-embedded-rss-x
 
 The default template uses `{{ range .Data.Pages }}` to loop over the pages in a section or, for the index.xml at the root, all pages in every section.
 
-To include only your blog posts in the feed copy the default RSS template code to `layouts\rss.xml` in your Hugo project. Then change line 15 in the new `rss.xml` file, from:
+To include only your blog posts in the feed copy the default RSS template code to `layouts/rss.xml` in your Hugo project. Then change line 15 in the new `rss.xml` file, from:
 
 `{{ range .Data.Pages }}`
 
