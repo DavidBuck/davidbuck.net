@@ -1,15 +1,15 @@
 +++
-title = "Configure Hugo to ouput a single RSS feed for blog posts only"
+title = "Setup Hugo to output only an RSS feed of blog posts"
 date = 2018-02-01T21:16:37+11:00
 +++
 
-By default, [Hugo](//gohugo.io) generates RSS files for every [section](//gohugo.io/content-management/sections/) your site has. These are generated as `index.xml` files in each section directory (eg `post/index.xml`, `project/index.xml`) and list all pages for that section. An `index.xml` file is also rendered at the root of your project and includes items from all secions of your site.
+By default, [Hugo](//gohugo.io) generates RSS files for every [section](//gohugo.io/content-management/sections/) your site has. These are generated as `index.xml` files in each section directory (eg `post/index.xml`, `project/index.xml`) and list all pages for that section. An `index.xml` file is also rendered at the root of your project and includes items from all sections of your site.
 
 You can configure Hugo to generate a single RSS file listing only posts from a single section (e.g blog posts). A custom RSS file name can also be set (e.g. `feed.xml`).
 
-## 1. Ouput a single RSS file
+## 1. Output a single RSS file
 
-To configure Hugo to only output a sinlge RSS file to the root of your project, add the following to your `config.toml`:
+To configure Hugo to only output a single RSS file to the root of your project, add the following to your `config.toml`:
 
 {{< highlight toml >}}
 [outputs]
