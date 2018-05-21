@@ -27,6 +27,6 @@ baseName = "feed"
 
 
 [params]
-  footerText = "David Buck — Front End Developer"
+  footerText = "David Buck — Front-End Developer"
   twitterUser = "david_buck"
   githubUser = "davidbuck"
