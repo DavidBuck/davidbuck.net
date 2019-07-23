@@ -14,9 +14,10 @@ To configure Hugo to only output a single RSS file to the root of your project, 
 {{< highlight toml >}}
 [outputs]
 home = [ "RSS", "HTML"]
+section  = ["HTML"]
 {{< /highlight >}}
 
-source: [Hugo community](https://discourse.gohugo.io/t/how-can-i-change-the-rss-url/118/17)
+source: [Hugo community](https://discourse.gohugo.io/t/disabling-rss-for-sections/10479)
 
 ## 2. Set the RSS file to feed.xml
 
