@@ -1,0 +1,146 @@
+@charset 'utf-8';
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  color: $color-grey-dark;
+  font-family: 'Cormorant Garamond', serif;
+  line-height: 1.5;
+  margin: 0 0 70px;
+}
+
+p {
+  font-size: 1.3125rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 2.8125rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 2.0625rem;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #22262a;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 630px) {
+  p {
+    font-size: 1.125rem;
+  }
+
+  h1 {
+    font-size: 2.125rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.375rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+
+  h5 {
+    font-size: 1.125rem;
+  }
+}
+
+a {
+  color: $color-blue;
+  text-decoration: none;
+  transition: all 0.3s;
+
+  &:hover,
+  &:focus {
+    color: $color-yellow;
+    text-decoration: none;
+  }
+}
+
+ol,
+ul {
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+ul {
+  font-size: 1.3125rem;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+code {
+  background-color: $color-grey-light;
+  color: $color-grey-dark;
+  font-family: SFMono-Regular, Menlo, Monaco,Consolas, 'Liberation Mono', 'Courier New', monospace;
+  font-size: 0.875rem;
+  padding: 3px;
+  word-break: break-word;
+}
+
+pre {
+  color: $color-grey-dark;
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  overflow: auto;
+}

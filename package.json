@@ -1,0 +1,38 @@
+{
+  "name": "davidbuck.net",
+  "description": "Personal blog",
+  "version": "1.1.0",
+  "author": {
+    "name": "David Buck",
+    "url": "https://davidbuck.net"
+  },
+  "repository": "https://github.com/DavidBuck/davidbuck.net",
+  "homepage": "https://davidbuck.net",
+  "keywords": [
+    "theme",
+    "hugo",
+    "gohugo"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "stylelint": "stylelint 'src/sass/*.scss'",
+    "sass": "node-sass --output-style expanded --source-map true --source-map-contents true src/sass/minimal-blog.scss static/css/minimal-blog.css",
+    "cleancss": "cleancss --level 1 --source-map --source-map-inline-sources --output static/css/minimal-blog.min.css static/css/minimal-blog.css",
+    "build": "run-s stylelint sass cleancss",
+    "serve": "hugo server",
+    "watch:css": "onchange 'src/sass/' --  run-s build",
+    "watch": "run-p serve watch:*"
+  },
+  "devDependencies": {
+    "clean-css": "^4.2.1",
+    "clean-css-cli": "^4.3.0",
+    "ncp": "^2.0.0",
+    "node-sass": "^4.12.0",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^6.0.0",
+    "stylelint": "^10.1.0",
+    "stylelint-config-sass-guidelines": "^6.0.0",
+    "stylelint-order": "^3.0.1",
+    "stylelint-scss": "^3.9.1"
+  }
+}

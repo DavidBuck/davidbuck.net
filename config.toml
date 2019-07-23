@@ -1,7 +1,6 @@
 baseURL = "https://davidbuck.net/"
 title = "David Buck"
 languageCode = "en-us"
-theme = "tyger-minimal-blog"
 disableKinds = ["taxonomy", "taxonomyTerm"]
 pygmentsStyle= "manni"
 

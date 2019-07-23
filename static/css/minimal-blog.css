@@ -1,0 +1,253 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  color: #22262a;
+  font-family: 'Cormorant Garamond', serif;
+  line-height: 1.5;
+  margin: 0 0 70px;
+}
+
+p {
+  font-size: 1.3125rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 2.8125rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 2.0625rem;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+h5 {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #22262a;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 630px) {
+  p {
+    font-size: 1.125rem;
+  }
+  h1 {
+    font-size: 2.125rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.375rem;
+  }
+  h4 {
+    font-size: 1.25rem;
+  }
+  h5 {
+    font-size: 1.125rem;
+  }
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+a:hover, a:focus {
+  color: #ffbf1f;
+  text-decoration: none;
+}
+
+ol,
+ul {
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+ul {
+  font-size: 1.3125rem;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+code {
+  background-color: #f1f4f4;
+  color: #22262a;
+  font-family: SFMono-Regular, Menlo, Monaco,Consolas, 'Liberation Mono', 'Courier New', monospace;
+  font-size: 0.875rem;
+  padding: 3px;
+  word-break: break-word;
+}
+
+pre {
+  color: #22262a;
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  overflow: auto;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 630px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.3125rem;
+  list-style: none;
+  margin-bottom: 0;
+  padding-bottom: 20px;
+  padding-left: 0;
+  padding-top: 50px;
+}
+
+.nav a {
+  color: #22262a;
+  transition: all 0.35s;
+}
+
+.nav a:hover, .nav a:focus {
+  color: #ffbf1f;
+}
+
+.nav .nav-break {
+  border-right: 1px solid #22262a;
+  font-style: italic;
+}
+
+.nav .navbar-brand {
+  display: inline-block;
+  font-size: 1.3125rem;
+  margin-right: 0;
+  padding-right: 20px;
+  padding-top: 10px;
+}
+
+@media (max-width: 630px) {
+  .nav {
+    justify-content: center;
+  }
+}
+
+.nav-link {
+  padding: 0.5rem 1rem;
+}
+
+.blog-list {
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.blog-list a {
+  color: #22262a;
+  font-style: italic;
+  transition: all 0.3s;
+}
+
+.blog-list a:hover, .blog-list a:focus {
+  color: #ffbf1f;
+}
+
+.blog-post {
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.blog-post .blog-post-date {
+  font-size: 1.3125rem;
+  font-style: italic;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 630px) {
+  .blog-post .blog-post-date {
+    font-size: 1.125rem;
+  }
+}
+
+footer {
+  bottom: 0;
+  font-size: 1.3125rem;
+  height: 70px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+footer .blog-footer {
+  border-top: 1px solid #22262a;
+  padding-top: 10px;
+}
+
+footer .blog-footer a {
+  color: #22262a;
+  font-style: italic;
+  transition: all 0.3s;
+}
+
+footer .blog-footer a:hover, footer .blog-footer a:focus {
+  color: #ffbf1f;
+}
+
+@media (max-width: 630px) {
+  footer {
+    font-size: 1.125rem;
+  }
+}
+
+/*# sourceMappingURL=minimal-blog.css.map */
