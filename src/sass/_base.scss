@@ -139,8 +139,14 @@ code {
 pre {
   color: $color-grey-dark;
   display: block;
-  font-size: 1rem;
+  font-size: 87.5%;
   margin-bottom: 1rem;
   margin-top: 0;
   overflow: auto;
+}
+
+pre {
+  code {
+    font-size: inherit;
+  }
 }
